@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-google-generativeai" %}
-{% set version = "0.51.0" %}
+{% set version = "0.51.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_google_generativeai-{{ version }}.tar.gz
-  sha256: 63f2a0bf36a42678d448715d284c5fc29345a7122b6ddc371a4853483aa8a18a
+  sha256: e7e186ec2eebcf1eb7cf4c751692fd0a09998f9b479c82ba40ec7874693abe14
 
 build:
   noarch: python
