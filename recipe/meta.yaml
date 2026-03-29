@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-google-generativeai" %}
-{% set version = "0.53.3" %}
+{% set version = "0.55.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_google_generativeai-{{ version }}.tar.gz
-  sha256: cb5905b3efc456addfb66e20078e457c2294cc2fb7687f1587d3ee9855703b34
+  sha256: 3eb7edfed777524966a971e53e433df00225100d7811d564e8b9fbca1c1559ed
 
 build:
   noarch: python
@@ -21,10 +21,10 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - opentelemetry-api >=1.28.0,<2.0.0
-    - opentelemetry-instrumentation >=0.50b0
-    - opentelemetry-semantic-conventions >=0.50b0
-    - opentelemetry-semantic-conventions-ai >=0.4.12,<0.5
+    - opentelemetry-api >=1.38.0,<2.0.0
+    - opentelemetry-instrumentation >=0.59b0
+    - opentelemetry-semantic-conventions >=0.59b0
+    - opentelemetry-semantic-conventions-ai >=0.5.1,<0.6.0
     - google-genai >=1,<2
 
 test:
