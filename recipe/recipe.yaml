@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: opentelemetry-instrumentation-google-generativeai
-  version: "0.63.0"
+  version: "0.63.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/opentelemetry_instrumentation_google_generativeai-${{ version }}.tar.gz
-  sha256: bf5ee436b63da853b827486c6464108673e8c4f941a1e5699b1a4a09a3bfd996
+  sha256: 7a121aa95d8fdd4be1066790d2ced18c08b815b4680c02b7933e4ab86ec3ff8f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
